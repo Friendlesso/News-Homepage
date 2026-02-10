@@ -10,4 +10,19 @@
 
 body {
   background-color: var(--off-white);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 1.5rem 4rem;
+  }
 }
