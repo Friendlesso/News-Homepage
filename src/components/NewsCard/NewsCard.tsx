@@ -14,14 +14,14 @@ export default function NewsCard() {
             className="flex gap-5 w-sm"
             key={correctIndex}
           >
-            <div>
+            <div className="w-1/2">
               <img
                 src={data.img.src}
                 alt={data.img.alt}
-                className="h-full min-w-25 max-h-33 max-w-25 sm:min-h-25 sm:min-w-35 sm:max-h-45 sm:max-w-35"
+                className="w-full h-48  object-cover"
               />
             </div>
-            <div className="flex flex-col sm:gap-3 gap-1.5">
+            <div className="flex flex-col sm:gap-3 gap-1.5 w-1/2">
               <p className="text-(--soft-red) font-extrabold text-3xl">{correctIndex}</p>
               <h3 className="text-(--dark-blue) hover:text-(--soft-red) font-bold sm:text-xl text-lg transition-colors duration-150">
                 <a href={data.href}>
