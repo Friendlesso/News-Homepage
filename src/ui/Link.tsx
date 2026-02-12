@@ -7,7 +7,7 @@ type LinkProps = {
 export default function Link({
   linkTo,
   className,
-  label
+  label,
 }: LinkProps) {
  return (
   <a 

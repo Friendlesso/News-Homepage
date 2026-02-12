@@ -4,7 +4,7 @@ import Article from "../../ui/Article";
 export default function NewsCard() {
 
   return (
-    <section className="flex justify-between flex-wrap sm:gap-0 gap-10">
+    <section className="flex lg:justify-between justify-center flex-wrap gap-10">
       {ARTICLE_DATA.map((data, index) => {
 
         const correctIndex = (index + 1).toString().padStart(2, '0')
@@ -18,15 +18,17 @@ export default function NewsCard() {
               <img
                 src={data.img.src}
                 alt={data.img.alt}
-                className="min-h-25 min-w-35 max-h-45 max-w-35"
+                className="h-full min-w-25 max-h-33 max-w-25 sm:min-h-25 sm:min-w-35 sm:max-h-45 sm:max-w-35"
               />
             </div>
-            <div>
-              <p>{correctIndex}</p>
-              <h3>
-                <a href={data.href}>{data.title}</a>
+            <div className="flex flex-col sm:gap-3 gap-1.5">
+              <p className="text-(--soft-red) font-extrabold text-3xl">{correctIndex}</p>
+              <h3 className="text-(--dark-blue) hover:text-(--soft-red) font-bold sm:text-xl text-lg transition-colors duration-150">
+                <a href={data.href}>
+                  {data.title}
+                </a>
               </h3>
-              <p>{data.description}</p>
+              <p className="text-(--dark-gray-blue)">{data.description}</p>
             </div>
           </Article>
         )

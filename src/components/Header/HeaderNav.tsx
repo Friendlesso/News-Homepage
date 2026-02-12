@@ -34,7 +34,7 @@ const NAV_LINK_CLASSNAME = `
 `
 
 const Nav_LINK_CONTAINER_CLASSNAME = `
-  fixed top-0 rigth-0 h-full w-screen bg-(--off-white) flex flex-col sm:flex-row items-center
+  fixed top-0 h-full w-screen bg-(--off-white) flex flex-col sm:flex-row items-center
   gap-5 p-5 py-20
   z-20
   transform transition-transform duration-400
@@ -63,7 +63,8 @@ export function HeaderNav() {
         className={`
           ${isNavOpen ? '-translate-x-50' : 'translate-x-full'}
           ${Nav_LINK_CONTAINER_CLASSNAME}
-        `}>
+        `}
+      >
         {NAV_LINKS.map((navLink) => (
           <Link
             key={navLink.label}
