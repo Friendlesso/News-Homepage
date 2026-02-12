@@ -12,7 +12,8 @@ body {
   background-color: var(--off-white);
   font-family: "Inter", Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 1rem 1rem;
+  padding: 2.5rem 1rem;
+  min-height: 100dvh;
 }
 
 @media (min-width: 768px) {
@@ -23,6 +24,6 @@ body {
 
 @media (min-width: 1280px) {
   body {
-    padding: 1.5rem 4rem;
+    padding: 2.5rem 8rem;
   }
 }

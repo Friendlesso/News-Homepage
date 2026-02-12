@@ -32,7 +32,7 @@ export default function CloseNavBtn({
         className={`${isNavOpen ? '-rotate-45 -translate-y-1' : ''}`}
       />
       <span
-        className=""
+        className={`${isNavOpen ? 'translate-y-1' : ''}`}
       />
     </button>
   )
