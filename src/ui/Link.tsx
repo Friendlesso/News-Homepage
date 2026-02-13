@@ -1,6 +1,6 @@
 type LinkProps = {
   linkTo: string;
-  className: string;
+  className?: string;
   label: string;
 }
 
