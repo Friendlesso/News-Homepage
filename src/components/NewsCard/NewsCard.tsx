@@ -4,17 +4,18 @@ import Article from "../../ui/Article";
 export default function NewsCard() {
 
   return (
-    <section className="flex lg:justify-between justify-center flex-wrap gap-10">
+    // Change mt-12  to be a gap when site is finished
+    <section className="grid xl:grid-cols-3 md:grid-cols-2 gap-10 mt-12">
       {ARTICLE_DATA.map((data, index) => {
 
         const correctIndex = (index + 1).toString().padStart(2, '0')
 
         return (
           <Article
-            className="flex gap-5 w-sm"
+            className="flex gap-5 md:max-w-sm"
             key={correctIndex}
           >
-            <div className="w-1/2">
+            <div className="w-1/2 ">
               <img
                 src={data.img.src}
                 alt={data.img.alt}
