@@ -20,7 +20,7 @@ export default function FeaturedArticle() {
           <Link
             linkTo="/"
             label="READ MORE"
-            className="bg-(--soft-red) hover:bg-(--dark-blue) hover:text-white p-5 font-bold tracking-wider text-center sm:w-1/2 transition-colors duration-200 ease-in-out"
+            className="bg-(--soft-red) hover:bg-(--dark-blue) hover:text-white p-5 font-bold tracking-wider text-center w-1/2 transition-colors duration-200 ease-in-out"
           />
         </div>
       </div>
